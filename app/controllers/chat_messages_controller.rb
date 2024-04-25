@@ -10,6 +10,7 @@ class ChatMessagesController < ApplicationController
         locals: { chat_message: @chat_message}
       )
     else
+
       render json: @chat_message.errors, status: :unprocessable_entity
     end
   end
